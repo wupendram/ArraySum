@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  arraysum:
+    image: ${DOCKER_REGISTRY-}arraysum
+    build:
+      context: .
+      dockerfile: ArraySum/Dockerfile
